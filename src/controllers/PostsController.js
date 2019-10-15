@@ -46,7 +46,7 @@ module.exports = {
             console.log(error);
         });
 
-        return res.json(post);
+        return res.json({ modified: post.nModified });
     },
 
     async view(req, res){
